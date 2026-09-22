@@ -1,0 +1,363 @@
+/* =========================================================
+   BOBA BLISS — external stylesheet
+   Written to match the ORIGINAL page structure (divs, tables,
+   align attributes) rather than rebuilding the markup.
+   Palette pulled from the shop's own drink photography.
+   ========================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap");
+
+:root {
+  --cream: #fff6ea;
+  --cream-deep: #f7e6c9;
+  --coffee: #3b241c;
+  --coffee-soft: #6b4530;
+  --caramel: #a9673a;
+  --caramel-dark: #8a4f28;
+  --taro: #9b7fc7;
+  --pearl: #2a1e18;
+  --line: rgba(59, 36, 28, 0.15);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: var(--cream);
+  color: var(--coffee);
+  font-family: "Nunito", "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Baloo 2", "Segoe UI", sans-serif;
+  color: var(--coffee);
+  font-weight: 600;
+}
+
+p { max-width: 62ch; margin-left: auto; margin-right: auto; }
+
+a { color: var(--caramel-dark); }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 0;
+}
+
+/* ---------- header ---------- */
+header {
+  padding: 56px 20px 36px;
+  background: radial-gradient(circle at 50% -20%, var(--cream-deep), var(--cream) 65%);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0 0 6px;
+}
+
+header h2 {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 500;
+  color: var(--caramel-dark);
+  font-size: 1.2rem;
+  margin: 0 0 18px;
+}
+
+header img {
+  display: block;
+  border-radius: 24px;
+  box-shadow: 0 16px 36px rgba(59, 36, 28, 0.18);
+  margin: 20px auto 0;
+}
+
+/* ---------- nav ---------- */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 246, 234, 0.94);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 10px;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--coffee-soft);
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background: var(--caramel);
+  color: #fff;
+}
+
+/* ---------- generic section spacing ---------- */
+div[id] {
+  padding: 56px 20px;
+}
+
+div[id] h2 { font-size: 2rem; margin-bottom: 14px; }
+
+/* ---------- about ---------- */
+#home {
+  text-align: center;
+}
+
+#about {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+#about ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+#about li {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--caramel);
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-weight: 700;
+  color: var(--coffee-soft);
+}
+
+/* ---------- best sellers ---------- */
+#bestsellers {
+  background: var(--cream-deep);
+}
+
+#bestsellers table {
+  border-collapse: separate;
+  border-spacing: 20px 0;
+  border: none !important;
+  margin: 0 auto;
+}
+
+#bestsellers td {
+  background: #fff;
+  border: none !important;
+  border-radius: 20px 20px 46px 46px; /* echoes a cup silhouette */
+  box-shadow: 0 10px 24px rgba(59, 36, 28, 0.14);
+  padding: 18px !important;
+  transition: transform 0.2s ease;
+}
+
+#bestsellers td:hover { transform: translateY(-6px); }
+
+#bestsellers img {
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+#bestsellers strong { color: var(--caramel-dark); }
+
+/* ---------- menu table ---------- */
+#menu table {
+  border-collapse: collapse;
+  border: none !important;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(59, 36, 28, 0.1);
+}
+
+#menu th {
+  background: var(--coffee);
+  color: var(--cream);
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 500;
+  border: none !important;
+}
+
+#menu td {
+  border: none !important;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+#menu tr:nth-child(even) td { background: var(--cream); }
+
+/* ---------- toppings ---------- */
+ol {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  justify-content: center;
+}
+
+ol li {
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  color: var(--coffee-soft);
+}
+
+/* ---------- gallery ---------- */
+#gallery {
+  background: var(--cream-deep);
+}
+
+#gallery table {
+  border-collapse: separate;
+  border-spacing: 24px 0;
+  margin: 0 auto;
+}
+
+#gallery figure {
+  margin: 0;
+}
+
+#gallery img {
+  border-radius: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0 10px 22px rgba(59, 36, 28, 0.18);
+  object-fit: cover;
+}
+
+#gallery figcaption {
+  margin-top: 12px;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 600;
+}
+
+/* ---------- order form ---------- */
+#order {
+  background: var(--coffee);
+  color: var(--cream);
+}
+
+#order h2 { color: var(--cream); }
+
+#order form {
+  background: var(--cream);
+  color: var(--coffee);
+  border-radius: 20px;
+  padding: 32px;
+  max-width: 720px;
+  margin: 0 auto;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
+  text-align: left;
+}
+
+#order fieldset {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px 20px 20px;
+  margin: 0 0 20px;
+}
+
+#order legend {
+  font-family: "Baloo 2", sans-serif;
+  padding: 0 8px;
+  color: var(--caramel-dark);
+}
+
+#order label { font-weight: 700; font-size: 0.92rem; }
+
+#order input[type="text"],
+#order input[type="email"],
+#order input[type="tel"],
+#order input[type="number"],
+#order select,
+#order textarea {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  background: #fff;
+  color: var(--coffee);
+}
+
+#order input:focus,
+#order select:focus,
+#order textarea:focus {
+  outline: 3px solid var(--taro);
+  outline-offset: 1px;
+}
+
+#order button {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1rem;
+  padding: 12px 26px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+#order button[type="submit"] {
+  background: var(--caramel);
+  color: #fff;
+}
+#order button[type="submit"]:hover { background: var(--caramel-dark); }
+
+#order button[type="reset"] {
+  background: transparent;
+  color: var(--coffee-soft);
+  border: 1px solid var(--line);
+}
+
+/* ---------- contact ---------- */
+#contact p { margin: 6px auto; }
+
+/* ---------- footer ---------- */
+footer {
+  background: var(--pearl);
+  color: var(--cream-deep);
+  padding: 44px 20px;
+  text-align: center;
+}
+
+footer h2 { color: var(--cream); }
+
+footer a {
+  color: #e8837a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 720px) {
+  #bestsellers table,
+  #gallery table,
+  #bestsellers tr,
+  #gallery tr,
+  #bestsellers td,
+  #gallery td {
+    display: block;
+    width: 100% !important;
+  }
+  #bestsellers td { margin-bottom: 20px; }
+  #gallery td { margin-bottom: 24px; }
+  header h1 { font-size: 2.2rem; }
+  #order form { padding: 22px; }
+}
+/* Cross-page navigation */
+.site-nav { }
+.site-nav a { }

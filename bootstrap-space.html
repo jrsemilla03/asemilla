@@ -1,0 +1,474 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alfredo | Personal Space</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <style>
+        body {
+            background-color: #111315;
+            color: #f1f3f2;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #111315;
+            border-bottom: 1px solid #292d30;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .navbar-brand span {
+            color: #7c5cff;
+        }
+
+        .nav-link {
+            color: #9da3a7;
+            margin-left: 15px;
+        }
+
+        .nav-link:hover {
+            color: #ffffff;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero small {
+            color: #7c5cff;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: clamp(4rem, 9vw, 8rem);
+            font-weight: 700;
+            line-height: 0.9;
+            letter-spacing: -6px;
+        }
+
+        .hero h1 span {
+            color: #7c5cff;
+        }
+
+        .hero-description {
+            max-width: 600px;
+            color: #9da3a7;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .btn-purple {
+            background-color: #7c5cff;
+            color: #ffffff;
+            border: none;
+            padding: 12px 25px;
+            font-weight: 600;
+        }
+
+        .btn-purple:hover {
+            background-color: #6849e8;
+            color: #ffffff;
+        }
+
+        /* Gaming panel */
+        .gaming-panel {
+            background-color: #191c1f;
+            border: 1px solid #292d30;
+            border-radius: 20px;
+            padding: 35px;
+        }
+
+        .gaming-icon {
+            width: 80px;
+            height: 80px;
+            background-color: #24272b;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #7c5cff;
+            margin-bottom: 25px;
+        }
+
+        .gaming-panel h4 {
+            font-weight: 700;
+        }
+
+        .gaming-panel p {
+            color: #92999e;
+            line-height: 1.7;
+        }
+
+        /* Sections */
+        section {
+            padding: 100px 0;
+        }
+
+        .section-tag {
+            color: #7c5cff;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        /* Interest cards */
+        .game-card {
+            background-color: #191c1f;
+            border: 1px solid #292d30;
+            border-radius: 16px;
+            padding: 30px;
+            height: 100%;
+            transition: 0.2s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: #7c5cff;
+        }
+
+        .game-card i {
+            color: #7c5cff;
+            font-size: 1.7rem;
+            margin-bottom: 20px;
+        }
+
+        .game-card h5 {
+            font-weight: 600;
+        }
+
+        .game-card p {
+            color: #92999e;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        /* Status section */
+        .status-box {
+            border-left: 3px solid #7c5cff;
+            padding-left: 25px;
+        }
+
+        .status-box p {
+            color: #92999e;
+            margin-bottom: 5px;
+        }
+
+        .status-online {
+            color: #8ddf72;
+            font-weight: 600;
+        }
+
+        /* Quote */
+        .quote-section {
+            background-color: #191c1f;
+            border-top: 1px solid #292d30;
+            border-bottom: 1px solid #292d30;
+        }
+
+        .quote {
+            font-size: clamp(1.8rem, 4vw, 3rem);
+            font-weight: 600;
+            letter-spacing: -1px;
+        }
+
+        .quote span {
+            color: #7c5cff;
+        }
+
+        /* Footer */
+        footer {
+            padding: 35px 0;
+            color: #71777b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- MAIN NAVIGATION -->
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="bootstrap-space.html">ALFREDO<span>.</span></a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Boba Bliss</a></li>
+                <li class="nav-item"><a class="nav-link" href="personal-space.html">Personal Space</a></li>
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<section id="home" class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-7">
+
+                <small>Personal Space / 2026</small>
+
+                <h1 class="mt-4">
+                    ALFREDO<span>.</span>
+                </h1>
+
+                <p class="hero-description mt-4">
+                    Student, gamer, and someone who enjoys spending
+                    time exploring different worlds — both on screen
+                    and outside of it.
+                </p>
+
+                <a href="#about" class="btn btn-purple mt-3">
+                    Explore <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+
+            </div>
+
+
+            <div class="col-lg-5">
+
+                <div class="gaming-panel">
+
+                    <div class="gaming-icon">
+                        <i class="bi bi-controller"></i>
+                    </div>
+
+                    <h4>Current Status</h4>
+
+                    <p class="mt-3">
+                        Probably thinking about what game to play next.
+                    </p>
+
+                    <div class="status-box mt-4">
+
+                        <p>Player Status</p>
+
+                        <span class="status-online">
+                            ● Online
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-7">
+
+                <div class="section-tag mb-3">
+                    About
+                </div>
+
+                <h2 class="section-title display-5">
+                    Just Alfredo being JR.
+                </h2>
+
+                <p class="text-secondary mt-4 fs-5 lh-lg">
+                    I'm a student who enjoys having a good time,
+                    learning new things, and of course, playing games.
+                </p>
+
+                <p class="text-secondary lh-lg">
+                    Gaming is one of the things I enjoy because every
+                    game offers something different. Sometimes it's
+                    about competition, sometimes it's about exploring,
+                    and sometimes it's simply about having fun with
+                    friends.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INTERESTS -->
+<section id="interests">
+
+    <div class="container">
+
+        <div class="mb-5">
+
+            <div class="section-tag mb-3">
+                Interests
+            </div>
+
+            <h2 class="section-title display-6">
+                Things that keep me entertained.
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- Gaming -->
+            <div class="col-md-4">
+
+                <div class="game-card">
+
+                    <i class="bi bi-controller"></i>
+
+                    <h5>Gaming</h5>
+
+                    <p>
+                        Whether it's a quick match or a long session,
+                        gaming is probably one of my favorite ways
+                        to spend free time.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Competition -->
+            <div class="col-md-4">
+
+                <div class="game-card">
+
+                    <i class="bi bi-trophy"></i>
+
+                    <h5>Competition</h5>
+
+                    <p>
+                        A little competition makes things more
+                        interesting. Winning is nice, but improving
+                        is part of the fun too.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Friends -->
+            <div class="col-md-4">
+
+                <div class="game-card">
+
+                    <i class="bi bi-people"></i>
+
+                    <h5>Playing With Friends</h5>
+
+                    <p>
+                        Games are always better when there are people
+                        to laugh, compete, and occasionally blame
+                        for the loss.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- QUOTE -->
+<section class="quote-section">
+
+    <div class="container">
+
+        <div class="py-5">
+
+            <p class="quote mb-0">
+                Sometimes the best way to spend the day is
+                <span>one more game.</span>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="container text-center">
+
+        <p class="mb-1">
+            Alfredo's Personal Space
+        </p>
+
+        <small>
+            Built with Bootstrap · 2026
+        </small>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>
+```

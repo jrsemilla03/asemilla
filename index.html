@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boba Bliss Milk Tea Shop</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- INTERNAL CSS -->
+    <style>
+        #home img { animation: fadeUp 0.7s ease both; }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(14px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        @media print {
+            nav, #order, footer { display: none; }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header align="center">
+
+    <h1>🧋 BOBA BLISS 🧋</h1>
+
+    <h2>Sip Happiness in Every Cup!</h2>
+
+    <p>
+        Welcome to Boba Bliss! Your favorite place for delicious,
+        refreshing, and affordable milk tea.
+    </p>
+
+    <img src="images/milktea.jpg"
+         alt="Boba Bliss Milk Tea"
+         width="500"
+         height="300">
+
+</header>
+
+<hr>
+
+<!-- MAIN NAVIGATION -->
+<nav class="site-nav">
+    <a href="index.html">HOME</a>
+    <a href="personal-space.html">PERSONAL SPACE</a>
+    <a href="bootstrap-space.html">BOOTSTRAP PAGE</a>
+    <a href="#about">ABOUT</a>
+    <a href="#menu">MENU</a>
+    <a href="#bestsellers">BEST SELLERS</a>
+    <a href="#gallery">GALLERY</a>
+    <a href="#order">ORDER</a>
+    <a href="#contact">CONTACT</a>
+</nav>
+
+<hr>
+
+<!-- HOME SECTION -->
+<div id="home" align="center">
+
+    <h2>Welcome to Boba Bliss!</h2>
+
+    <p>
+        At Boba Bliss, we believe that every cup of milk tea
+        should bring happiness. We serve delicious drinks made
+        with quality ingredients and tasty toppings.
+    </p>
+
+    <p>
+        Take a sip, relax, and enjoy your favorite flavor!
+    </p>
+
+    <!-- INLINE CSS example -->
+    <img src="images/milktea.jpg"
+         alt="Delicious Milk Tea"
+         width="400"
+         style="border-radius:20px; box-shadow:0 10px 24px rgba(59,36,28,0.18);">
+
+</div>
+
+<hr>
+
+<!-- ABOUT SECTION -->
+<div id="about">
+
+    <h2>About Boba Bliss</h2>
+
+    <p>
+        Boba Bliss is a milk tea shop created for people who
+        love sweet and refreshing drinks.
+    </p>
+
+    <p>
+        Our goal is to provide delicious milk tea at an affordable
+        price. We offer different flavors, sizes, and toppings
+        for every customer.
+    </p>
+
+    <h3>Why Choose Us?</h3>
+
+    <ul>
+
+        <li>Fresh and quality ingredients</li>
+
+        <li>Delicious milk tea flavors</li>
+
+        <li>Affordable prices</li>
+
+        <li>Different toppings to choose from</li>
+
+        <li>Made with love for every customer</li>
+
+    </ul>
+
+</div>
+
+<hr>
+
+<!-- BEST SELLERS -->
+<div id="bestsellers" align="center">
+
+    <h2>⭐ Our Best Sellers ⭐</h2>
+
+    <table border="1"
+           width="90%"
+           cellpadding="10"
+           align="center">
+
+        <tr>
+
+            <td align="center">
+
+                <img src="images/classic.jpg"
+                     alt="Classic Milk Tea"
+                     width="150"
+                     height="200">
+
+                <h3>Classic Milk Tea</h3>
+
+                <p>
+                    Our original creamy and delicious milk tea.
+                </p>
+
+                <p>
+                    <strong>Starting at ₱49</strong>
+                </p>
+
+            </td>
+
+
+            <td align="center">
+
+                <img src="images/brown-sugar.jpg"
+                     alt="Brown Sugar Boba"
+                     width="150"
+                     height="200">
+
+                <h3>Brown Sugar Boba</h3>
+
+                <p>
+                    Sweet brown sugar flavor with chewy pearls.
+                </p>
+
+                <p>
+                    <strong>Starting at ₱69</strong>
+                </p>
+
+            </td>
+
+
+            <td align="center">
+
+                <img src="images/taro.jpg"
+                     alt="Taro Milk Tea"
+                     width="150"
+                     height="200">
+
+                <h3>Taro Milk Tea</h3>
+
+                <p>
+                    A sweet and creamy taro flavored drink.
+                </p>
+
+                <p>
+                    <strong>Starting at ₱59</strong>
+                </p>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<hr>
+
+<!-- MENU SECTION -->
+<div id="menu">
+
+    <h2 align="center">🧋 Our Menu 🧋</h2>
+
+    <table border="1"
+           width="80%"
+           cellpadding="10"
+           align="center">
+
+        <tr>
+
+            <th>Drink</th>
+
+            <th>Description</th>
+
+            <th>Regular</th>
+
+            <th>Large</th>
+
+        </tr>
+
+
+        <tr>
+
+            <td>Classic Milk Tea</td>
+
+            <td>Original creamy milk tea</td>
+
+            <td>₱49</td>
+
+            <td>₱59</td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>Brown Sugar Boba</td>
+
+            <td>Sweet brown sugar with tapioca pearls</td>
+
+            <td>₱59</td>
+
+            <td>₱69</td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>Taro Milk Tea</td>
+
+            <td>Sweet and creamy taro flavor</td>
+
+            <td>₱59</td>
+
+            <td>₱69</td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>Matcha Milk Tea</td>
+
+            <td>Rich and refreshing matcha flavor</td>
+
+            <td>₱65</td>
+
+            <td>₱75</td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>Chocolate Milk Tea</td>
+
+            <td>Chocolate flavored creamy milk tea</td>
+
+            <td>₱55</td>
+
+            <td>₱65</td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>Cookies and Cream</td>
+
+            <td>Sweet cookies mixed with creamy milk tea</td>
+
+            <td>₱65</td>
+
+            <td>₱75</td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<hr>
+
+<!-- TOPPINGS -->
+<div align="center">
+
+    <h2>Our Toppings</h2>
+
+    <ol>
+
+        <li>Black Tapioca Pearls</li>
+
+        <li>Cheese Foam</li>
+
+        <li>Pudding</li>
+
+        <li>Grass Jelly</li>
+
+        <li>Crystal Pearls</li>
+
+    </ol>
+
+</div>
+
+<hr>
+
+<!-- GALLERY -->
+<div id="gallery" align="center">
+
+    <h2>📸 Milk Tea Gallery</h2>
+
+    <p>
+        Take a look at some of our delicious drinks!
+    </p>
+
+    <table align="center"
+           cellpadding="10">
+
+        <tr>
+
+            <td>
+
+                <figure>
+
+                    <img src="images/classic.jpg"
+                         alt="Classic Milk Tea"
+                         width="190"
+                         height="220">
+
+                    <figcaption>
+                        Classic Milk Tea
+                    </figcaption>
+
+                </figure>
+
+            </td>
+
+
+            <td>
+
+                <figure>
+
+                    <img src="images/brown-sugar.jpg"
+                         alt="Brown Sugar Boba"
+                         width="190"
+                         height="220">
+
+                    <figcaption>
+                        Brown Sugar Boba
+                    </figcaption>
+
+                </figure>
+
+            </td>
+
+
+            <td>
+
+                <figure>
+
+                    <img src="images/taro.jpg"
+                         alt="Taro Milk Tea"
+                         width="190"
+                         height="220">
+
+                    <figcaption>
+                        Taro Milk Tea
+                    </figcaption>
+
+                </figure>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+<hr>
+
+<!-- ORDER FORM -->
+<div id="order" align="center">
+
+    <h2>📝 Order Your Milk Tea</h2>
+
+    <p>
+        Fill out the form below to place your order.
+    </p>
+
+
+    <form>
+
+        <!-- CUSTOMER INFORMATION -->
+
+        <fieldset>
+
+            <legend>
+                <strong>Customer Information</strong>
+            </legend>
+
+
+            <p>
+
+                <label for="name">
+                    Full Name:
+                </label>
+
+                <br>
+
+                <input type="text"
+                       id="name"
+                       name="name"
+                       size="40"
+                       placeholder="Enter your full name"
+                       required>
+
+            </p>
+
+
+            <p>
+
+                <label for="email">
+                    Email Address:
+                </label>
+
+                <br>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       size="40"
+                       placeholder="Enter your email">
+
+            </p>
+
+
+            <p>
+
+                <label for="phone">
+                    Contact Number:
+                </label>
+
+                <br>
+
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       placeholder="09XXXXXXXXX">
+
+            </p>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- FLAVOR -->
+
+        <fieldset>
+
+            <legend>
+                <strong>Choose Your Flavor</strong>
+            </legend>
+
+
+            <input type="radio"
+                   id="classic"
+                   name="flavor"
+                   value="Classic Milk Tea">
+
+            <label for="classic">
+                Classic Milk Tea
+            </label>
+
+            <br><br>
+
+
+            <input type="radio"
+                   id="brown"
+                   name="flavor"
+                   value="Brown Sugar Boba">
+
+            <label for="brown">
+                Brown Sugar Boba
+            </label>
+
+            <br><br>
+
+
+            <input type="radio"
+                   id="taro"
+                   name="flavor"
+                   value="Taro Milk Tea">
+
+            <label for="taro">
+                Taro Milk Tea
+            </label>
+
+            <br><br>
+
+
+            <input type="radio"
+                   id="matcha"
+                   name="flavor"
+                   value="Matcha Milk Tea">
+
+            <label for="matcha">
+                Matcha Milk Tea
+            </label>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- SIZE -->
+
+        <fieldset>
+
+            <legend>
+                <strong>Choose Your Size</strong>
+            </legend>
+
+
+            <label for="size">
+                Size:
+            </label>
+
+
+            <select id="size"
+                    name="size">
+
+                <option value="">
+                    -- Select Size --
+                </option>
+
+                <option value="regular">
+                    Regular
+                </option>
+
+                <option value="large">
+                    Large
+                </option>
+
+            </select>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- TOPPINGS -->
+
+        <fieldset>
+
+            <legend>
+                <strong>Add Toppings</strong>
+            </legend>
+
+
+            <input type="checkbox"
+                   id="pearls"
+                   name="toppings"
+                   value="Pearls">
+
+            <label for="pearls">
+                Tapioca Pearls
+            </label>
+
+            <br>
+
+
+            <input type="checkbox"
+                   id="cheese"
+                   name="toppings"
+                   value="Cheese Foam">
+
+            <label for="cheese">
+                Cheese Foam
+            </label>
+
+            <br>
+
+
+            <input type="checkbox"
+                   id="pudding"
+                   name="toppings"
+                   value="Pudding">
+
+            <label for="pudding">
+                Pudding
+            </label>
+
+            <br>
+
+
+            <input type="checkbox"
+                   id="jelly"
+                   name="toppings"
+                   value="Grass Jelly">
+
+            <label for="jelly">
+                Grass Jelly
+            </label>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- QUANTITY -->
+
+        <fieldset>
+
+            <legend>
+                <strong>Order Quantity</strong>
+            </legend>
+
+
+            <label for="quantity">
+                Quantity:
+            </label>
+
+
+            <input type="number"
+                   id="quantity"
+                   name="quantity"
+                   min="1"
+                   max="10"
+                   value="1">
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- SPECIAL REQUEST -->
+
+        <fieldset>
+
+            <legend>
+                <strong>Special Instructions</strong>
+            </legend>
+
+
+            <label for="message">
+                Your Request:
+            </label>
+
+            <br><br>
+
+
+            <textarea id="message"
+                      name="message"
+                      rows="5"
+                      cols="50"
+                      placeholder="Enter your special instructions here..."></textarea>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- BUTTONS -->
+
+        <button type="submit">
+            Place Order
+        </button>
+
+
+        <button type="reset">
+            Clear Form
+        </button>
+
+    </form>
+
+</div>
+
+<hr>
+
+<!-- CONTACT -->
+<div id="contact" align="center">
+
+    <h2>Contact Us</h2>
+
+    <p>
+        <strong>📍 Location:</strong>
+        San Pablo Binalonan Pangasinan
+    </p>
+
+    <p>
+        <strong>📞 Contact Number:</strong>
+        09162737244
+    </p>
+
+    <p>
+        <strong>✉ Email:</strong>
+        bobabliss@gmail.com
+    </p>
+
+    <p>
+        We would love to hear from you!
+    </p>
+
+</div>
+
+<hr>
+
+<!-- FOOTER -->
+<footer align="center">
+
+    <h2>Thank You for Visiting Boba Bliss!</h2>
+
+    <p>
+        Sip Happiness in Every Cup 🧋
+    </p>
+
+    <p>
+        &copy; 2026 Boba Bliss Milk Tea Shop
+    </p>
+
+    <p>
+        <a href="#home">
+            Back to Top
+        </a>
+    </p>
+
+</footer>
+
+</body>
+</html>
